@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/AggiesBingo/static/css/main.f855e6bc.css",
+    "main.js": "/AggiesBingo/static/js/main.b8c6a6ed.js",
+    "static/js/488.9c92ff38.chunk.js": "/AggiesBingo/static/js/488.9c92ff38.chunk.js",
+    "static/media/logo.svg": "/AggiesBingo/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/AggiesBingo/index.html",
+    "main.f855e6bc.css.map": "/AggiesBingo/static/css/main.f855e6bc.css.map",
+    "main.b8c6a6ed.js.map": "/AggiesBingo/static/js/main.b8c6a6ed.js.map",
+    "488.9c92ff38.chunk.js.map": "/AggiesBingo/static/js/488.9c92ff38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.b8c6a6ed.js"
+  ]
+}
