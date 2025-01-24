@@ -5,6 +5,9 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import bingoGrid from './bingoGrid';
 
+
+
+
 function App() {
   return (
     <Container maxWidth="sm">
@@ -12,7 +15,7 @@ function App() {
       <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
        Welcome to Aggie Bingo
       </Typography>
-       <bingoGrid></bingoGrid>
+       {bingoGrid}
     </Box>
   </Container>
   );
