@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AggiesBingo/static/css/main.f855e6bc.css",
-    "main.js": "/AggiesBingo/static/js/main.a6a22fcc.js",
+    "main.css": "/AggiesBingo/static/css/main.6a0b9716.css",
+    "main.js": "/AggiesBingo/static/js/main.e47e9e7a.js",
     "static/js/488.9c92ff38.chunk.js": "/AggiesBingo/static/js/488.9c92ff38.chunk.js",
     "index.html": "/AggiesBingo/index.html",
-    "main.f855e6bc.css.map": "/AggiesBingo/static/css/main.f855e6bc.css.map",
-    "main.a6a22fcc.js.map": "/AggiesBingo/static/js/main.a6a22fcc.js.map",
+    "main.6a0b9716.css.map": "/AggiesBingo/static/css/main.6a0b9716.css.map",
+    "main.e47e9e7a.js.map": "/AggiesBingo/static/js/main.e47e9e7a.js.map",
     "488.9c92ff38.chunk.js.map": "/AggiesBingo/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.a6a22fcc.js"
+    "static/css/main.6a0b9716.css",
+    "static/js/main.e47e9e7a.js"
   ]
 }
