@@ -1,5 +1,7 @@
 import Button from '@mui/material/Button';
 import { useState } from 'react';
+import './bingoGrid.css';  // Import the CSS file
+
 
 function generateBoard() {
   const rows = Array.from({ length: 5 }, () => Array(5).fill(null));
@@ -20,7 +22,7 @@ function gridItem(num, index, selected, toggleSelected) {  // Add 'selected' and
     <Button 
       key={index} 
       onClick={() => toggleSelected(index)} 
-      style={{ backgroundColor: selected ? '#212529' : 'grey', width: '150px',height:'100px',color:'white' }}  // Change background color if selected
+      className={`grid-item ${selected ? 'selected' : ''}`}  // Use CSS classes
     >
       {addMessage(num)}
     </Button>
@@ -50,31 +52,31 @@ function checkWinner(selectedItems) {
 
 function addMessage(num) {
   const messages = [
-    'one',
-    'two',
-    'three',
-    'four',
-    'five',
-    'six',
-    'seven',
-    'eight',
-    'nine',
-    'ten',
-    'eleven',
-    'twelve',
-    'thirteen',
-    'fourteen',
-    'fifteen',
-    'sixteen',
-    'seventeen',
-    'eighteen',
-    'nineteen',
-    'twenty',
-    'twenty-one',
-    'twenty-two',
-    'twenty-three',
-    'twenty-four',
-    'twenty-five'
+    'Falslev Football',
+    'The Hurd',
+    'The Spectrum',
+    'Coach Turnover',
+    'Tourney Apperances',
+    'Barnes Walk-On',
+    'Martinez Transfers',
+    'Falslev Cache Valley',
+    ' Matchup Zone',
+    'Albury Speed',
+    'To PAC',
+    'Free Throw Yips',
+    'Stew Morrill',
+    'Aggies 10-0 Run',
+    'Big fish',
+    'Lob to Gateretse',
+    'Live/Die by 3',
+    'Grown man Move',
+    'Heat Check',
+    'Thats a Dagger',
+    'Active Hands',
+    'MW Parity',
+    'Cant buy bucket',
+    'SC Top10',
+    'Big Fella'
   ];
   return messages[num-1];
 }
@@ -96,12 +98,12 @@ export function BingoGrid() {
   };
 
   return (
-    <div>
-      {winner && <div>Winner!</div>}
+    <div className="bingo-grid">
+      {winner && <div className="winner-message">Winner!</div>}
       {boardNumbers.map((row, rowIndex) => 
-        <div key={rowIndex}>
+        <div key={rowIndex} className="bingo-row">
           {row.map((num, colIndex) => 
-            <span key={colIndex}>
+            <span key={colIndex} className="bingo-cell">
               {gridItem(num, rowIndex * 5 + colIndex, selectedItems[rowIndex * 5 + colIndex], toggleSelected)}  
             </span>
           )}

@@ -1,0 +1,54 @@
+.bingo-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px ;
+}
+
+.winner-message {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #212529;
+}
+
+.bingo-row {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.grid-item {
+  background-color: #A2AAAD;
+  width: 150px;
+  height: 100px;
+  color: white;
+}
+
+.grid-item.selected {
+  background-color: #212529;
+}
+
+.bingo-cell{
+    background-color: #A2AAAD;
+
+}
+
+@media (max-width: 600px) {
+  .grid-item {
+    background-color: #A2AAAD;
+    letter-spacing: -1;
+    line-height: 15px;
+    max-width: 17%;
+    height: 75px;
+  }
+
+  .bingo-cell{
+    max-width: 17%;
+  }
+
+  .bingo-grid{   
+     font-size: 10px;
+  }
+}
